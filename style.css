@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+    background-color: bisque;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.spaceBetween {
+    justify-content: space-between;
+}
+
+.alignCenter {
+    align-items: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+/* HEADER*/
+.style{
+    background-color: rgb(45, 12, 12);
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: fit-content;
+}
+
+.bannerimage {
+    width: 100%;
+    background-image: url(http://s30.postimg.org/x0ne0p5wx/bootsrap.png);
+    height: 405px;
+    background-color: purple;
+    background-position: center;
+  }
+/* Liste */
+li {
+    margin-top: 5px;
+    list-style-position: inside;
+}
+
+.listDecoNone {
+    list-style-type: none;
+}
+
+/*SECTION HERO*/
+.bkgdHero {
+    background-image:url(https://img.freepik.com/photos-premium/variete-macarons-colores-eclaboussures-fond-bleu-texture_1223942-14299.jpg);
+    margin: 0;
+}
+    
+
+.cardCSS {
+    border-radius: 19px;
+    border: 1px solid #FFF;
+    box-shadow: 0px 0px 4px 0px rgba(130, 130, 130, 0.71);
+    padding: 15px;
+    margin-bottom: 35px;
+    
+
+}
+
+.cardImg {
+    display: block;
+    width: 100%
+}
+
+.imgProd{
+    width: 20%;
+    height: 35%;
+}
+
+/*FOOTER*/
