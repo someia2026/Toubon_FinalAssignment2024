@@ -167,10 +167,16 @@ li {
 .cardCSS {
 
     border: 1px solid #FFF;
+    border-radius: 24px 24px 24px 24px;
+    -moz-border-radius: 24px 24px 24px 24px;
+    -webkit-border-radius: 24px 24px 24px 24px;
+    border: 0px solid;
     box-shadow: 0px 0px 4px 0px rgba(130, 130, 130, 0.71);
     padding: 15px;
     margin-bottom: 35px;
     width: 30%;
+    background-color: #E19898;
+    color: white;
 
 }
 
@@ -189,18 +195,49 @@ li {
 
 }
 
+.TitleSection {
+    text-align: center;
+    margin-bottom: 28px;
+    margin-top: 10px;
+    font-family: "Julius Sans One", sans-serif;
+}
+
 /* SECTION PRODUIT*/
 
-.slide-box {
-    width: 200px;
-    height: 100px;
-    background-color: lightblue;
-    position: relative;
-    left: 0;
-    transition: left 1s ease-in-out;
-}
+
 .DisplayInline {
-    flex-direction: row;
+    display: inline-flex;
+}
+
+/* SECTION BOUTON SCROLL-UP*/
+
+#sticky-container {
+    position: relative;
+    /* Establish a relative positioning context */
+}
+
+#scroll-up-btn {
+    position: fixed;
+    /* Make the button sticky */
+    z-index: 0;
+    bottom: 5%;
+    /* Position the button 20px from the bottom */
+    right: 3%;
+    /* Position the button 20px from the right */
+    background-color: #333;
+    /* Button background color */
+    color: #fff;
+    font-weight: 400;
+    font-size: 36px;
+    /* Button text color */
+    cursor:pointer;
+    /* Change cursor to a hand when hovering */
+    border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    -webkit-border-radius: 200px 200px 200px 200px;
+    border: 0px solid #000000;
+    width: 58px;
+    height: 58px;
 }
 
 /* SECTION AVANTAGE*/
@@ -208,6 +245,8 @@ li {
 .AvtgClientContainer {
     position: relative;
     display: inline-block;
+    height: 530px;
+    align-items: center;
 }
 
 .AvtgClient img {
@@ -240,6 +279,27 @@ li {
     border: 1px solid rgba(104, 42, 115, 0.53);
 }
 
+.gapAVTGCL {
+    color: white;
+}
+
+
+/*SERVICE*/
+
+.imageServ {
+    width: 100%;
+    opacity: 50%;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.titleServ {
+    position: absolute;
+    top: 10%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
 /* TEMOIGNAGES*/
 .ImgRound {
     border-radius: 200px 200px 200px 200px;
@@ -252,6 +312,12 @@ li {
     margin-bottom: -71px;
 }
 
+.fontStyleTem {
+    font-family: "Julius Sans One", sans-serif;
+    margin-top: 50px;
+    margin-bottom: 70px;
+
+}
 
 /*FOOTER*/
 .txt {
@@ -268,10 +334,7 @@ li {
 
 }
 
-.list {
-    list-style-type: none;
 
-}
 
 .liFooterNone {
     text-decoration: none;

@@ -94,7 +94,19 @@ function afficheTemoignages(Tmg) {
                     </div>`
 
                   
-    document.querySelector("#Temoignages").innerHTML += template                
+    document.querySelector("#Temoignages").innerHTML += template       
+
+// Rôle: Créer un bouton de navigation
+// Paramètre: mon écouteur d'évènement
+// Retour : Aucun
+const stickyContainer = document.getElementById('sticky-container');
+const scrollUpBtn = document.getElementById('scroll-up-btn');
+
+// Rajout de mon Ecouteur d'évènement
+scrollUpBtn.addEventListener('click', () => {
+// Je paramètre le scroll qui va vers le haut
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
     
     
     
