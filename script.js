@@ -35,18 +35,29 @@ fetch('PatisserieToubon.json')
     
     
 
-//donnee.nomCommercial    
+//donnee.nomCommercial
+//rôle : Afficher les données du tableau infos
+//paramêtre : Fichier JSON
+//Retour: Aucun
+
 function afficheInfos(info) {
     document.querySelector("#nomCommercial").innerHTML = info.nomCommercial
     document.querySelector("#phraseAccroche").innerHTML = info.phraseAccroche
     document.querySelector("#texteAppelAction").innerHTML = info.texteAppelAction
 }
+//rôle : Afficher les données du tableau Avantages
+//paramêtre : Fichier JSON
+//Retour: Aucun
+
 function afficheAvantages(Avtg){
     console.log(Avtg)
     document.querySelector("#avantagesClients").innerHTML =Avtg.avantagesClients;
     
 }
 
+//rôle : Afficher les données du tableau Produits
+//paramêtre : Fichier JSON
+//Retour: Aucun
 
 function afficheUnProduit(p) {
     console.log(p.nom);
@@ -60,6 +71,10 @@ function afficheUnProduit(p) {
     document.querySelector("#produits").innerHTML += template
 
 }
+
+//rôle : Afficher les données du tableau Services
+//paramêtre : Fichier JSON
+//Retour: Aucun
 
 function afficheServices(serv) {
     console.log(serv.nom);
@@ -77,6 +92,10 @@ function afficheServices(serv) {
     document.querySelector("#services").innerHTML += template
 
 }
+
+//rôle : Afficher les données du tableau Témoignages
+//paramêtre : Fichier JSON
+//Retour: Aucun
 
 function afficheTemoignages(Tmg) {
     console.log(Tmg.imageUrl);
@@ -99,6 +118,7 @@ function afficheTemoignages(Tmg) {
 // Rôle: Créer un bouton de navigation
 // Paramètre: mon écouteur d'évènement
 // Retour : Aucun
+
 const stickyContainer = document.getElementById('sticky-container');
 const scrollUpBtn = document.getElementById('scroll-up-btn');
 
@@ -107,8 +127,7 @@ scrollUpBtn.addEventListener('click', () => {
 // Je paramètre le scroll qui va vers le haut
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
-    
-    
-    
-    
 }
+  
+    
+    
