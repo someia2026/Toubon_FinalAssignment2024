@@ -1,86 +1,102 @@
-fetch("PatisserieToubon.json")
-  .then((rep) => {
-   return rep.json();
-  })
-.then((data) => {
-    console.log(data);
-    afficher(data)
-
-});
-
-function afficher(FicheTouBon) {
-    // Afficher dans le cocument les information simples : nom commercilal , le slogan, le cta
-    // Récupère la data Json
-    let nomCom = FicheTouBon.nomCommercial; 
-    console.log(nomCom)
-    document.querySelector(`#nomEntreprise`).innerHTML = nomCom //reporter l'ID dans le HTML
-    let Accro = FicheTouBon.phraseAccroche;
-    document.querySelector(`Slogan`).innerHTML = Accro
-    let CTA = FicheTouBon.texteAppelAction;
-    document.querySelector(`#AppelAction`).innerHTML = CTA
-    console.log(afficher);
-    
-
-}
-
-// Initialisation des listes HTML pour les ingrédients et les étapes
-let listeAvantage = "";
-let listeProduits = "";
-let listeServices = "";
-let listeTmg ="";
-
-function afficheLesProduits(produits){
-  // Parcourt du contenu Produits et crée un élément de liste <li>
-    produits.forEach((Products) => {
-    console.log(Products); // Affiche les informations de chaque Avantage dans la console afin de vérifier
-    listeProduits += `<li>${produits.nom} ${produits.description} ${produits.imageurl}</li>`; // on ajoute l'élément de liste créer à la variable innitialisé plus haut. a terme, elle stockera l'ensemble des élément li 
-    `<div class="cardCSS"><!-- Carte Eclair au chocolat -->
-                    <ul><li>${listeProduits}</li></ul>
-                </div>`
-  });
-  document.querySelector("#cardContainer2").innerHTML += `
-  <div class="cardCSS"><!-- Carte Eclair au chocolat -->
-                    <ul>
-                        <li>
-                    <img class="img" src="${produits.imageurl}">
-                    <h3>${produits.nom}</h3> <!-- Nom de la patisserie -->
-                    <p>${produits.description}</p> <!-- Description de la patisserie -->
-                    </li>
-                    
-                    </ul>
-                </div>`
-}
-
-/*
-  // j'injecte mes cartes produit dans une div spéciale
-  FicheTouBon.AvantagesClients.forEach((AvtgClients) => {
-    console.log(AvtgClients); // Affiche les informations de chaque Avantage dans la console afin de vérifier
-    listeAvantage += `<li>${avantagesClients} ${avantagesClients} ${avantagesClients}</li>`;
-  
-   `<div> 
-    <ul>${listeAvantage}</ul>
-    </div>`
-});
-}
- 
- /*   FicheTouBon.services.forEach(element => {
-    console.log(Favours);
-    listeServices +=`<li>${services.nom} ${services.description}</li>`;
-    `<div class="cardCSS">
-    <h3></h3>
-    <p></p>           
-   </div>`                 
+fetch('PatisserieToubon.json')
+    .then((rep) => {
+        return rep.json()
+    })
+    .then(donnee => {
+        console.log(donnee);
+        afficheInfos(donnee)
+        
+        //affichage des produits
+        donnee.produits.forEach(prod => {
+            afficheUnProduit(prod)
             
- });
+        });
+
+        // affichage des services
+        donnee.services.forEach(serv=>{
+            afficheServices(serv)
+        });
+
+    
+        
+        // affichage des témoignages
+        donnee.temoignages.forEach(Tmg => {
+            afficheTemoignages(Tmg)
+            
+        });
+
+        //affichage des avantage
+        donnee.avantagesClients.forEach(Avtg => {
+           afficheAvantages(donnee)
+        });
+
+    });
+    
+    
     
 
- FicheTouBon.temoignages.forEach((Tmg) => {
- console.log(Tmg); // Affiche les informations de chaque Témoignage dans la console afin de vérifier
- listeTmg += `<li>${temoignages.prenom} ${temoignages.typeExperience} ${temoignages.commentaire} ${temoignages.note}</li>`;
- `<div class="cardCSS">
-<ul><li>${listeTmg}</li></ul>
-});`                        
-})
-document.querySelectorAll("#cardContainer").innerHTML += blabla
+//donnee.nomCommercial    
+function afficheInfos(info) {
+    document.querySelector("#nomCommercial").innerHTML = info.nomCommercial
+    document.querySelector("#phraseAccroche").innerHTML = info.phraseAccroche
+    document.querySelector("#texteAppelAction").innerHTML = info.texteAppelAction
 }
-*/
+function afficheAvantages(Avtg){
+    console.log(Avtg)
+    document.querySelector("#avantagesClients").innerHTML =Avtg.avantagesClients;
+    
+}
+
+
+function afficheUnProduit(p) {
+    console.log(p.nom);
+    console.log(p.description);
+    console.log(p.imageUrl)
+    let template = `<div class="cardCSS"><!-- Carte Eclair au chocolat -->
+                    <img src="${p.imageUrl}" alt="eclair-chocolat">
+                    <h3>${p.nom}</h3> <!-- Nom de la patisserie -->
+                    <p>${p.description}</p> <!-- Description de la patisserie -->
+                </div>`
+    document.querySelector("#produits").innerHTML += template
+
+}
+
+function afficheServices(serv) {
+    console.log(serv.nom);
+    console.log(serv.description);
+    console.log(serv.imageUrl)
+
+    let template = `<div class="cardCSS">
+                    
+                    <h3>${serv.nom}</h3>
+                    <img src="${serv.imageUrl}" alt="">
+                    <p>${serv.description}</p> <!-- description -->
+                    
+
+                </div>`
+    document.querySelector("#services").innerHTML += template
+
+}
+
+function afficheTemoignages(Tmg) {
+    console.log(Tmg.imageUrl);
+    console.log(Tmg.prenom);
+    console.log(Tmg.typeExperience);
+    console.log(Tmg.commentaire);
+    console.log(Tmg.note);
+
+    let template =  `<div class="cardCSS">
+                    <img src="${Tmg.imageUrl}" alt="">
+                    <h4>${Tmg.prenom}</h4>
+                    <p>"${Tmg.typeExperience}"</p>
+                    <p>${Tmg.commentaire}</p>
+                    <p>Note: ${Tmg.note}</p>
+                    </div>`
+
+                  
+    document.querySelector("#Temoignages").innerHTML += template                
+    
+    
+    
+    
+}

@@ -37,31 +37,37 @@
   "services": [
     {
       "nom": "Gâteaux Sur Mesure",
-      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables."
+      "description": "Commandez des gâteaux sur mesure pour célébrer vos occasions spéciales. Des créations uniques et personnalisées pour rendre vos moments encore plus mémorables.",
+      "imageUrl": "https://img.freepik.com/photos-gratuite/gateau-anniversaire-fatigue-pour-princesse-recouverte-glacage-rose_1304-4700.jpg?t=st=1733486117~exp=1733489717~hmac=aa795e2ef190e24769d53fb81836d41f644af0425eed0e79018a6846fe1b6e14&w=740"
     },
     {
       "nom": "Cours de Pâtisserie",
-      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations."
+      "description": "Participez à nos cours de pâtisserie pour apprendre les secrets de nos chefs. Éveillez le pâtissier qui sommeille en vous et régalez-vous de vos propres créations.",
+      "imageUrl": "https://media.istockphoto.com/id/532574387/fr/photo/%C3%A9quipe-de-boulangers-p%C3%A2te-%C3%A0-p%C3%A9trir.jpg?s=2048x2048&w=is&k=20&c=5iYshqO3ePwaKS5dHWynYpcgEvhVQeDqLP6KhZEfTVk="
     },
     {
       "nom": "Service Traiteur",
-      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions."
+      "description": "Optez pour notre service traiteur pour ravir vos invités lors de vos événements. Des pâtisseries délicieuses et élégantes pour toutes les occasions.",
+      "imageUrl": "https://img.freepik.com/photos-gratuite/gateaux-creme-aux-baies-servis-plats-verre-incurves_8353-720.jpg?t=st=1733486230~exp=1733489830~hmac=fc9a5e77f286a45221e2225e6fb193d0107bb21e22247042416d475a0109030e&w=1380"
     }
   ],
   "temoignages": [
     {
+      "imageUrl": "https://cdn.pixabay.com/photo/2024/02/11/17/53/ai-generated-8567154_1280.jpg",
       "prenom": "Sophie",
       "typeExperience": "Macarons Variés",
       "commentaire": "Les macarons de TouBon sont une véritable explosion de saveurs. Chaque bouchée est un délice. Une pâtisserie incontournable à Auxerre !",
       "note": 5
     },
     {
+      "imageUrl": "https://as2.ftcdn.net/v2/jpg/06/24/99/01/1000_F_624990142_epzbis2pTsazpQBskNxpvEDLrpFpbIWA.jpg",
       "prenom": "Pierre",
       "typeExperience": "Cours de Pâtisserie",
       "commentaire": "Les cours de pâtisserie chez TouBon sont divertissants et instructifs. J'ai appris à créer des desserts incroyables. Une expérience enrichissante !",
       "note": 4
     },
     {
+      "imageUrl": "https://img.freepik.com/photos-premium/photo-belle-femme-asiatique-japonaise-aux-cheveux-courts-ia-generative_35887-14714.jpg?w=740",
       "prenom": "Claire",
       "typeExperience": "Gâteau Sur Mesure",
       "commentaire": "TouBon a créé le gâteau sur mesure parfait pour mon anniversaire. Non seulement il était magnifique, mais il était aussi délicieux. Un grand merci !",

@@ -5,121 +5,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="scriptCOR.js"defer></script>
+    <script src="script.js" defer></script>
+    
+    
     <title>Patisserie TouBon à Auxerre</title>
 </head>
-<header>
-    <nav class="flex spaceBetween banner">
-        <div> <!-- le logo -->
-            <a href="adresse de redirection"><img src="assets.html/Logo_TouBon.png"></a>
-        </div>
-        <div> <!-- 4 rubriques section avec liens -->
-            <ul class="flex spaceBetween listDecoNone">
-                <li><a href="">Produits</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Témoignages</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-</header>
+
 
 <body>
-    <main class="container">
+    <header class="style">
+        <nav class="flex spaceBetween alignCenter ">
+
+            <div> <!-- 4 rubriques section avec liens -->
+                <ul class="flex alignCenter">
+                    <li><a href="">Produits</a></li>
+                    <li><a href="">Services</a></li>
+                    <a href="adresse de redirection"><img src="assets.html/Logo_TouBon.png"></a>
+                    <li><a href="">Témoignages</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
         <div>
             <div></div> <!-- BOUTON SCROLL-UP EN STICKY -->
-            <section class="container"> <!-- HERO -->
-                <div>
-                <div>
-                <img class="" src="" alt=""> <!-- Background Image semi-transparente -->
-            </div>
-            <div>
-                <h1 id="phraseAccroche">accroche</h1> <!-- Succombez -->
-                <h2 id="nomCommercial"></h2> <!-- TouBon - Pâtisserie à Auxerre -->
-                <a id="texteAppelAction"></a> <!-- Découvrez nos créations  --> <!-- CREER UN BOUTON CTA -->
-            </div>
+            <section class="relative"> <!-- HERO -->
+
+
+                <img src="assets.html/Large_selection_patisseries.jpg" alt="" class="imageHero">
+                <!-- Background Image semi-transparente -->
+
+                <div class="absolute">
+                    <h1 id="phraseAccroche"></h1> <!-- Succombez -->
+                    <h2 id="nomCommercial" class="NomComStyle"></h2> <!-- TouBon - Pâtisserie à Auxerre -->
+                    <a id="texteAppelAction"></a> <!-- Découvrez nos créations  --> <!-- CREER UN BOUTON CTA -->
+                </div>
             </section>
+
+            <section class="container"> <!-- SECTION PRODUITS --> <!-- En Rubans -->
+                <h2>Produits</h2> <!-- Produits -->
+                <div id="produits" class="flex gap"></div>
+
+            </section>
+
+            <section class="relative"> <!-- SECTION SERVICES --> <!-- Rectangulaire -->
+                <img src="assets.html/fond abstrait.jpg" alt="" class="imageHero">
+                <div class="absolute">
+                    <h2>Services</h2>
+                    <div id="services" class="flex gap">
+
+                    </div>
+                </div>
+
+
+            </section>
+
             <section class="container"> <!-- SECTION AVANTAGE CLIENTS -->
                 <!-- le fond rete blanc ou beige très clair -->
-                <div id="containerCard" class="cardProduits"> <!-- Carte Ronde --> <!-- classe a modifier -->
-                    <img src="assets.html/Large_selection_patisseries.jpg" class="imgProd" alt="">
-                    <!-- Image semi transparente -->
-                    <p>Large sélection de pâtisseries artisanale </p> <!-- Large sélection de pâtisseries artisanale -->
+                <div class="AvtgClientContainer">
+                    <h2>Avantages Clients</h2>
+                    <div class="flex spaceBetween">
+
+
+                        <div class="cardCSS AvtgClient img"> <!-- Carte Ronde -->
+                            <img class="avtgImg" src="assets.html/Large_selection_patisseries.jpg" alt="">
+                            <!-- Image semi transparente -->
+
+                            <p class="PostionTxt">Large sélection de pâtisseries artisanales</p>
+                        </div>
+                        <div class="cardCSS AvtgClient img"> <!-- Carte Ronde -->
+                            <img class="avtgImg" src="assets.html/Ingredients_patisserie.jpg" alt="">
+                            <!-- Image semi transparente -->
+
+                            <p class="PostionTxt"> Ingrédients de qualité pour des saveurs authentiques</p>
+                        </div>
+                        <div class="cardCSS AvtgClient img"> <!-- Carte Ronde -->
+                            <img class="avtgImg" src="assets.html/Interieur_Boutique_Patisserie.jfif" alt="">
+                            <!-- Image semi transparente -->
+                            <p class="PostionTxt">Ambiance chaleureuse pour une expérience gourmande unique</p>
+
+
+                        </div>
+                    </div>
                 </div>
-            </div>
 
 
-            </section>
-            <section  class="container"> <!-- SECTION PRODUITS --> <!-- En Rubans -->
-                <h2>Produits</h2> <!-- Produits -->
-                <div id="produits" class="cardCSS"><!-- Carte Eclair au chocolat -->
-                    
-                    <img src="assets.html/eclair-chocolat.webp" alt="eclair-chocolat">
-                    <h3>Eclair au chocolat</h3> <!-- Nom de la patisserie -->
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur ipsam facilis sequi officia
-                        architecto! Quasi repudiandae dignissimos in, dolore mollitia quibusdam sit facilis aspernatur
-                        eum enim suscipit sapiente, dolor aperiam.
-                        Numquam voluptatum dolorum perspiciatis ea mollitia ipsum, sint quidem blanditiis, sunt vel
-                        commodi est dignissimos. Neque asperiores ipsum quo, autem libero ullam ducimus cum assumenda
-                        minima beatae omnis, in dolorem.</p> <!-- Description de la patisserie -->
-                   
-                </div>
-
-            </section>
-            <section class="container"> <!-- SECTION SERVICES --> <!-- Rectangulaire -->
-                <h2>Services</h2>
-                <div id="#services" class="cardCSS">
-                    <img class="img" src="assets.html/cake_personnalisé.jpg" alt="">
-                    <h3>Gateau sur mesure</h3>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam odio eius corporis dolorum
-                        mollitia incidunt non! Assumenda consequatur rem vel ut molestiae tempore mollitia odio
-                        obcaecati sapiente? Earum, voluptates autem!
-                        Aut porro explicabo eveniet qui ratione. Eius ipsa saepe eveniet quidem! Veritatis accusamus,
-                        necessitatibus eos corrupti, delectus magni perferendis aliquid nihil quo a exercitationem,
-                        culpa quis enim rerum repellat illo.</p> <!-- description -->
-
-                </div> <!-- Gateau sur Mesure -->
 
 
             </section>
             <section class="container"> <!-- SECTION TEMOIGNAGES -->
-                <div id="containerAvis" class="cardCSS">
-                    <img class="img" src="assets.html/Claire_cliente.jfif" alt="">
-                    <div>
-                        <h5>prenom</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sunt dolorum magni aperiam eaque, quo obcaecati modi iure! Nesciunt pariatur assumenda quos eos, corporis maxime possimus veritatis non asperiores distinctio.</p>
-                    </div>
-                    <div>
-                    <h5>experience</h5>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis perspiciatis dolores et explicabo quae possimus id mollitia maxime excepturi in voluptatibus, laborum, quis, sequi totam expedita voluptatem fugiat asperiores assumenda?</p>
+                <h2>Témoignages</h2>
+                <div class="flex spaceBetween">
 
+                    <div id="Temoignages" class="flex gap">
+
+                    </div>
                 </div>
-                
+
+
+
 
             </section>
-        </div>
+
     </main>
 </body>
 <footer> <!-- SECTION CONTACT -->
-    <h3>Contact</h3>
-    <div>
-        <ul>
-            <li>TouBon Pâtisserie</li>
-            <li>Adresse</li>
-            <li>Numéro de Téléphone</li>
-        </ul>
-    </div>
-    <div> <!-- Logos Réseaux Sociaux -->
-        <a href="adresse de redirection"><img src="URL de l'image"></a> <!-- Logo Facebook-->
-        <a href="adresse de redirection"><img src="URL de l'image"></a> <!-- Logo Insta  -->
-    </div>
-    <div> <!-- Liens Hypertextes -->
-        <ul>
-            <li><a href="">Presse</a></li>
-            <li><a href="">Recrutement</a></li>
-            <li><a href="">Mentions Légales et Crédits</a></li>
-        </ul>
-    </div>
+    <nav class="flex spaceBetween alignCenter fixed ">
+        <div class="txt">
+            <h3>Contact</h3>
+
+            <ul>
+                <li>TouBon Pâtisserie</li>
+                <li>Adresse</li>
+                <li>Numéro de Téléphone</li>
+            </ul>
+        </div>
+        <div> <!-- Logos Réseaux Sociaux -->
+            <a href="https://www.facebook.com/?locale=fr_FR"><img src=""></a> <!-- Logo Facebook-->
+            <a href="https://www.instagram.com/"><img src=""></a> <!-- Logo Insta  -->
+        </div>
+        <div> <!-- Liens Hypertextes -->
+            <ul class="flex alignCenter">
+                <li><a href="https://www.lejournaldespatissiers.com/" target="_blank">Presse</a></li>
+                <li><a href="https://www.bakerstaff.com/trouver-du-renfort?gad_source=1&gclid=Cj0KCQiA3sq6BhD2ARIsAJ8MRwX2OZufkxuQ_2ihrZ8DBkG5xRz4VxUjUD2aO1RZuxT5-hVO-IAy_cUaAlEgEALw_wcB"
+                        target="_blank">Recrutement</a></li>
+                <li><a href="https://www.numetik-avocats.fr/wp-content/uploads/2022/11/doc-mentions-legales-941x1024.png "
+                        target="_blank">Mentions Légales et Crédits</a></li>
+            </ul>
+        </div>
+    </nav>
 </footer>
+
 
 </html>
