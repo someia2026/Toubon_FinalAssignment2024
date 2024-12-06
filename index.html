@@ -6,23 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    
-    
+
+
     <title>Patisserie TouBon à Auxerre</title>
 </head>
 
 
 <body>
     <header class="style">
-        <nav class="flex spaceBetween alignCenter ">
+        <nav class="flex spaceBetween alignCenter spaceEvenly ">
 
             <div> <!-- 4 rubriques section avec liens -->
-                <ul class="flex alignCenter">
-                    <li><a href="">Produits</a></li>
-                    <li><a href="">Services</a></li>
-                    <a href="adresse de redirection"><img src="assets.html/Logo_TouBon.png"></a>
-                    <li><a href="">Témoignages</a></li>
-                    <li><a href="">Contact</a></li>
+                <ul class="flex alignCenter ">
+                    <li><a href="#prod">PRODUITS</a></li>
+                    <li><a  href="#Serv">SERVICES</a></li>
+                    <a href="https://i.pinimg.com/736x/39/f4/6d/39f46d26d487054e9b810a942058b3cc.jpg" target="_blank"><img class="logoSize" src="assets.html/Logo_TouBon.png"></a>
+                    <li><a href="#Tem">TEMOIGNAGES</a></li>
+                    <li><a href="#Ctc">CONTACT</a></li>
                 </ul>
             </div>
         </nav>
@@ -37,22 +37,21 @@
                 <!-- Background Image semi-transparente -->
 
                 <div class="absolute">
-                    <h1 id="phraseAccroche"></h1> <!-- Succombez -->
-                    <h2 id="nomCommercial" class="NomComStyle"></h2> <!-- TouBon - Pâtisserie à Auxerre -->
-                    <a id="texteAppelAction"></a> <!-- Découvrez nos créations  --> <!-- CREER UN BOUTON CTA -->
+                    <h1 id="phraseAccroche" class="AccroStyle"></h1> <!-- Succombez -->
+                    <h2 id="nomCommercial" class="NomComStyle marginNomCom"></h2> <!-- TouBon - Pâtisserie à Auxerre -->
+                    <a id="texteAppelAction" class="btnCTA"></a> <!-- Découvrez nos créations  --> <!-- CREER UN BOUTON CTA -->
                 </div>
             </section>
 
             <section class="container"> <!-- SECTION PRODUITS --> <!-- En Rubans -->
-                <h2>Produits</h2> <!-- Produits -->
+                <h2 id="Prod">Produits</h2> <!-- Produits -->
                 <div id="produits" class="flex gap"></div>
-
             </section>
 
             <section class="relative"> <!-- SECTION SERVICES --> <!-- Rectangulaire -->
                 <img src="assets.html/fond abstrait.jpg" alt="" class="imageHero">
                 <div class="absolute">
-                    <h2>Services</h2>
+                    <h2 id="Serv">Services</h2>
                     <div id="services" class="flex gap">
 
                     </div>
@@ -84,49 +83,42 @@
                             <img class="avtgImg" src="assets.html/Interieur_Boutique_Patisserie.jfif" alt="">
                             <!-- Image semi transparente -->
                             <p class="PostionTxt">Ambiance chaleureuse pour une expérience gourmande unique</p>
-
-
                         </div>
                     </div>
                 </div>
 
-
-
-
             </section>
-            <section class="container"> <!-- SECTION TEMOIGNAGES -->
-                <h2>Témoignages</h2>
-                <div class="flex spaceBetween">
+            <section class="relative"> <!-- SECTION TEMOIGNAGES -->
+                <img src="assets.html/fond_temoignages.jpg" alt="" class="imageHero marginBotttom">
+                <div class="absolute">
+                    <h2 id="Tem">Témoignages</h2>
+                    <div class="flex spaceBetween">
 
-                    <div id="Temoignages" class="flex gap">
+                        <div id="Temoignages" class="flex gap">
 
+                        </div>
                     </div>
-                </div>
-
-
-
-
             </section>
 
     </main>
 </body>
 <footer> <!-- SECTION CONTACT -->
-    <nav class="flex spaceBetween alignCenter fixed ">
+    <nav class="alignCenter styleFooter">
         <div class="txt">
-            <h3>Contact</h3>
-
-            <ul>
+            <h3 id="Ctc">Contact</h3>
+            <ul class="listDecoNone">
                 <li>TouBon Pâtisserie</li>
                 <li>Adresse</li>
                 <li>Numéro de Téléphone</li>
             </ul>
         </div>
-        <div> <!-- Logos Réseaux Sociaux -->
-            <a href="https://www.facebook.com/?locale=fr_FR"><img src=""></a> <!-- Logo Facebook-->
-            <a href="https://www.instagram.com/"><img src=""></a> <!-- Logo Insta  -->
-        </div>
+        <!-- <div>  Logos Réseaux Sociaux 
+            <a href="https://www.facebook.com/?locale=fr_FR"><img src=""></a> <!Logo Facebook-->
+        <!-- <a href="https://www.instagram.com/"><img src=""></a> Logo Insta  
+             </div>-->
+
         <div> <!-- Liens Hypertextes -->
-            <ul class="flex alignCenter">
+            <ul class="flex spaceEvenly listDecoNone">
                 <li><a href="https://www.lejournaldespatissiers.com/" target="_blank">Presse</a></li>
                 <li><a href="https://www.bakerstaff.com/trouver-du-renfort?gad_source=1&gclid=Cj0KCQiA3sq6BhD2ARIsAJ8MRwX2OZufkxuQ_2ihrZ8DBkG5xRz4VxUjUD2aO1RZuxT5-hVO-IAy_cUaAlEgEALw_wcB"
                         target="_blank">Recrutement</a></li>

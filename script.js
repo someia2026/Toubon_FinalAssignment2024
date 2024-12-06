@@ -86,7 +86,7 @@ function afficheTemoignages(Tmg) {
     console.log(Tmg.note);
 
     let template =  `<div class="cardCSS">
-                    <img src="${Tmg.imageUrl}" alt="">
+                    <img class="ImgRound" src="${Tmg.imageUrl}" alt="">
                     <h4>${Tmg.prenom}</h4>
                     <p>"${Tmg.typeExperience}"</p>
                     <p>${Tmg.commentaire}</p>
