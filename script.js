@@ -63,7 +63,7 @@ function afficheUnProduit(p) {
     console.log(p.nom);
     console.log(p.description);
     console.log(p.imageUrl)
-    let template = `<div class="cardCSS"><!-- Carte Eclair au chocolat -->
+    let template = `<div class="cardCSS small100"><!-- Carte Eclair au chocolat -->
                     <img src="${p.imageUrl}" alt="eclair-chocolat">
                     <h3>${p.nom}</h3> <!-- Nom de la patisserie -->
                     <p>${p.description}</p> <!-- Description de la patisserie -->

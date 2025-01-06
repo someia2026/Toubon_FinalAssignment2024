@@ -103,7 +103,7 @@ header img {
 
 }
 
-.absolute h1,
+
 .absolute h2 {
     margin-bottom: 16px;
 }
@@ -174,7 +174,7 @@ li {
     box-shadow: 0px 0px 4px 0px rgba(130, 130, 130, 0.71);
     padding: 15px;
     margin-bottom: 35px;
-    width: 30%;
+    width: 17%;
     background-color: #E19898;
     color: white;
 
@@ -339,3 +339,19 @@ li {
     text-decoration: none;
     color: black;
 }
+/*----SECTION RESPONSIVE DESIGN----*/
+/*BARRE DE NAVIGATION*/
+@media all and (max-width: 800px){
+    .AccroStyle{
+        font-size: 24px;
+    }
+    .btnCTA{
+        align-items: center;
+    }
+    .small100{
+        width: 100%;
+        margin: 32px;
+    }
+
+}
+/**/
