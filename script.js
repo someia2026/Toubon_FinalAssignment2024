@@ -81,10 +81,10 @@ function afficheServices(serv) {
     console.log(serv.description);
     console.log(serv.imageUrl)
 
-    let template = `<div class="cardCSS">
+    let template = `<div class="cardService small100">
                     
                     <h3>${serv.nom}</h3>
-                    <img src="${serv.imageUrl}" alt="">
+                    <img src="${serv.imageUrl}" alt="" class="cardImg">
                     <p>${serv.description}</p> <!-- description -->
                     
 

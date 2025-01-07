@@ -183,6 +183,9 @@ li {
 .cardCSS img {
     width: 100%;
 }
+.cardService{
+    width: 30%;
+}
 
 .cardImg {
     display: block;
@@ -299,7 +302,10 @@ li {
     transform: translate(-50%, -50%);
     text-align: center;
 }
-
+.bg-abstrait{
+    background-image: url("./assets.html/fond\ abstrait.jpg");
+    background-size: cover;
+}
 /* TEMOIGNAGES*/
 .ImgRound {
     border-radius: 200px 200px 200px 200px;
